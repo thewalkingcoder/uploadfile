@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AppController!{% endblock %}
+
+{% block body %}
+    <div>   {{ form_errors(form) }}</div>
+
+    {{ form_start(form) }}
+    {{ form_widget(form.files) }}
+    <button>Submit</button>
+    {{ form_end(form) }}
+{% endblock %}
